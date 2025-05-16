@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+@import url( "../fonts/stylesheet.css");/* fallback */
+@import url( "all.css");
+
+
+
+body /* định dạng cho nguyên 1 trang*/
+{
+	background-color: #eeeeee; /* màu nền cho trang web*/
+	color: #043872; /* màu chữ*/ 
+	font-family:"Quicksand",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	font-size: 16px;
+	margin: 0    /* bỏ đẩy lề của trang web*/
+}
+.font-subtitle
+{
+	font-family: "Mea Culpa", cursive;
+  	font-weight: 600;
+  	font-style: normal;
+
+}
+.font-to{
+	 font-family: 'Copeland';
+}
+.font-monghon{
+	font-family: 'TT Chocolates';
+}
+
+h1{ 
+		font-size: 45px;
+		background: #EEAECA;
+background: radial-gradient(circle,rgba(97, 194, 95, 1) 0%, rgba(74, 76, 158, 1) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	 -webkit-text-stroke-width: 0.5px;
+ 	 -webkit-text-stroke-color:rgba(0,0,0,0.5);
+	}
+h2{ font-size: 40px; text-shadow:1px 1px 5px rgba(255,255,0,0.8)}
+h3{ font-size: 36px}
+h4{ font-size: 24px}
+h5{ font-size: 20px}
+h6{ font-size: 18px}
+h1,h2,h3,h4,h5,h6{ margin-bottom: 0; margin-top: 0}
+a{ 
+	color:blueviolet;
+	text-decoration:none;
+	font-weight: 700
+}
+a:hover /* khi đưa chuột và chữ có thẻ a - liên kết trang web nào đó*/
+{
+	color: #A40338
+}
+/*----------------------- layout bo cuc web----small----------*/
+.container-fluid
+{
+	width: 100%; padding-left: 16px; padding-right: 16px
+}
+/*------------- mobile first-----------------*/
+.container
+{
+	width:95%; margin: auto
+}
+/*--------------size container cho tablet (ipad)-medium--------------*/
+@media (min-width:600px)
+{
+	.container
+	{
+		width:90%; margin: auto
+	}
+	
+}
+/*--------------size container cho pc 1000----large-----------*/
+@media (min-width:1000px)
+{
+	.container
+	{
+		width:80%; margin: auto
+	}
+}
+/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid blue
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row 
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.card
+{ 
+	background: white;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+
+footer
+{
+	background: #ccc
+}
+/*---- style he thong mau chữ cho web---*/
+.text-primary { color: blueviolet} /* mau chử chính (lam nhan ý chính */
+.text-secondary { color:#05916F} /* mau chử phụ (lam nhan ý phụ trong thiet ke */
+.text-light{ color: #DDDDDD}
+.text-dark{color: #323232}
+/*---- style he thong mau nền background cho web---*/
+.bg-primary { background-color: blueviolet}
+.bg-secondary { background-color:#05916F }
+.bg-light{background-color:#DDDDDD}
+.bg-dark {background-color:#323232}
+/*--- style he thong mau cho nút button---*/
+.btn-primary
+{ 
+	background-color: blueviolet;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-primary:hover{
+	background-color:powderblue;
+	color: white
+}
+
+.btn-secondary
+{ 
+	background-color: powderblue;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-secondary:hover{
+	background-color:blueviolet;
+	color: white
+}
+
+.btn-outline-primary
+{
+	border: 1px blueviolet inset;
+	color: blueviolet;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:blueviolet;
+	color: white
+}
+.btn-outline-secondary
+{
+	border: 1px powderblue solid;
+	color: powderblue;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-secondary:hover
+{
+	background-color:powderblue;
+	color: white
+}
+ul.menu{
+	
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content: space-around
+}
+ul.menu li a{
+	
+	padding: 8px 16px;
+	background-color: cornflowerblue;
+	color: white;
+	margin: 2px;
+}
+ul.menu li a:hover{
+	
+	background-color: cornflowerblue;
+	color: black
+}
+.banner{
+	position: relative
+}
+.banner-caption{
+	width: 40%; padding: 20px; border: 2px solid blue;
+	position: absolute;
+	right: 0; top: 20%	
+}
+
+

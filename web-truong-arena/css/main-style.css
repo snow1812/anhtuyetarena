@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Quicksand:wght@300..700&display=swap');
+@import url("../fonts/stylesheet.css");
+
+@import url("all.css");
+
+body /* định dạng cho nguyên 1 trang*/
+{
+	background-color: #eeeeee; /* màu nền cho trang web*/
+	color: #043872; /* màu chữ*/ 
+	font-family: "Quicksand",Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	font-size: 16px;
+	margin: 0    /* bỏ đẩy lề của trang web*/
+}
+.font-subtitle1
+{
+	font-family: "Mea Culpa", cursive;
+  	font-weight: 600;
+  	font-style: normal;
+}
+.font-sub-noel
+{
+	   font-family: 'Hello Christmas';
+	font-weight: 400
+	
+}
+.font-buom
+{
+	font-family: 'ButterFly';
+	
+}
+h1{ 
+		font-size: 45px;
+		background: #EEAECA;
+background: linear-gradient( rgba(255, 200, 202, 1) 30%, rgba(148, 187, 233, 1) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	 -webkit-text-stroke-width: 0.5px;
+ 	 -webkit-text-stroke-color:rgba(0,0,0,0.5);
+	}
+h2{ font-size: 40px; text-shadow:1px 1px 5px rgba(255,255,0,0.8)}
+h3{ font-size: 36px}
+h4{ font-size: 24px}
+h5{ font-size: 20px}
+h6{ font-size: 18px}
+h1,h2,h3,h4,h5,h6, a,button{ margin-bottom: 0; margin-top: 0;
+font-family: 'Coolvetica'}
+a{ 
+	color:deeppink;
+	text-decoration:none;
+	font-weight: 700
+}
+a:hover /* khi đưa chuột và chữ có thẻ a - liên kết trang web nào đó*/
+{
+	color: #A40338
+}
+/*@font-face
+{
+	font-family: f-tron;
+	src: url("../fonts/Coolvetica Rg.otf")
+}
+.aimuonf-tron
+{
+	font-family: f-tron;
+	
+}*/
+/*----------------------- layout bo cuc web----small----------*/
+.container-fluid
+{
+	width: 100%; padding-left: 16px; padding-right: 16px
+}
+/*------------- mobile first-----------------*/
+.container
+{
+	width:95%; margin: auto
+}
+/*--------------size container cho tablet (ipad)-medium--------------*/
+@media (min-width:600px)
+{
+	.container
+	{
+		width:90%; margin: auto
+	}
+	
+}
+/*--------------size container cho pc 1000----large-----------*/
+@media (min-width:1000px)
+{
+	.container
+	{
+		width:80%; margin: auto
+	}
+}
+/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	padding: 15px;
+	border: 1px solid blue
+}
+*{ box-sizing: border-box}
+.img-100{width: 100%}
+.row 
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.card
+{ 
+	background: white;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+
+
+.left-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* giữa theo chiều dọc */
+  align-items: flex-start;    /* đẩy sang trái */
+  text-align: left;        /* chữ canh trái */
+  height: 100%;             /* đảm bảo chiều cao đầy đủ */
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.center-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* căn giữa ngang */
+  justify-content:space-around;   /* căn giữa dọc nếu chiều cao cố định */
+  text-align: center;
+  height: 100%; /* hoặc đặt height cụ thể nếu cần căn giữa theo chiều dọc */
+}
+
+
+
+
+footer
+{
+	background: #ccc
+}
+/*---- style he thong mau chữ cho web---*/
+
+.text-primary { color: #05916F} /* mau chử chính (lam nhan ý chính */
+.text-secondary { color:#FABBBC} /* mau chử phụ (lam nhan ý phụ trong thiet ke */
+.text-light{ color:#797979}
+.text-dark{color: #323232}
+/*---- style he thong mau nền background cho web---*/
+.bg-primary { background-color: #FABBBC}
+.bg-secondary { background-color:#05916F }
+.bg-light{background-color:#DDDDDD}
+.bg-dark {background-color:#323232}
+/*--- style he thong mau cho nút button---*/
+.btn-primary
+{ 
+	background-color:#BAE4BE;
+	color:#2B4332;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-primary:hover{
+	background-color:#F0BAC0;
+	color:#7A3132
+}
+
+.btn-secondary
+{ 
+	background-color: #05916F;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 4px
+}
+.btn-secondary:hover{
+	background-color:deeppink;
+	color: white
+}
+
+.btn-outline-primary
+{
+	border: 1px deeppink inset;
+	color: deeppink;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:#F8C6C7;
+	color: #9D2628
+}
+.btn-outline-secondary
+{
+	border: 1px #05916F solid;
+	color: #05916F;
+	padding: 8px 16px;
+	border-radius: 4px;
+	margin:2px ;
+	
+}
+.btn-outline-secondary:hover
+{
+	background-color:#05916F;
+	color: white
+}
+/*--- style cho menu can ban chi dung duoc tai pc---*/
+ul.menu {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content: space-around;
+}
+
+ul.menu li a {
+	padding: 8px 16px;
+	color: #666666;
+	letter-spacing: 0.08rem;
+	margin: 2px;
+	display: block;
+	text-decoration: none;
+	transition: background-color 0.8s, color 0.8s;
+}
+
+ul.menu li a:hover {
+	background-color: deeppink;
+	border-bottom: 2px solid #666;
+	color: pink;
+}
+
+ul.menu li {
+	position: relative;
+}
+
+ul.menu .dropdown-menu {
+	width: 200px;
+	border: 1px solid green;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 9999;
+	background: #eee;
+	opacity: 0;
+	transform: scaleY(0);
+	transform-origin: top center;
+	transition: transform 0.8s ease, opacity 0.8s ease;
+	pointer-events: none;
+}
+
+ul.menu .dropdown-menu a {
+	display: block;
+	padding: 10px;
+	color: #333;
+	text-decoration: none;
+}
+
+ul.menu .dropdown-menu a:hover {
+	background-color: #ddd;
+	color: #000;
+}
+
+/* Hiệu ứng hover */
+ul.menu li:hover > .dropdown-menu {
+	opacity: 1;
+	transform: scaleY(1);
+	pointer-events: auto;
+}
+
+
+.banner{
+	position: relative
+}
+.banner-caption { 
+	 padding: 20px; 
+	width: 40%;
+	/*border: 2px solid blue;*/
+	position: absolute;
+	right: 10%; top: 20%
+}

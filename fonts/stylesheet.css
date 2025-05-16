@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Copeland';
+    src: url('Copeland.eot');
+    src: url('Copeland.eot?#iefix') format('embedded-opentype'),
+        url('Copeland.woff2') format('woff2'),
+        url('Copeland.woff') format('woff'),
+        url('Copeland.ttf') format('truetype'),
+        url('Copeland.svg#Copeland') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Chocolates';
+    src: url('TTChocolates-Regular.eot');
+    src: url('TTChocolates-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTChocolates-Regular.woff2') format('woff2'),
+        url('TTChocolates-Regular.woff') format('woff'),
+        url('TTChocolates-Regular.ttf') format('truetype'),
+        url('TTChocolates-Regular.svg#TTChocolates-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
